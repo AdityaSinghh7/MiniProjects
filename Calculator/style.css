@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border: none;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Lgrey{
+    background-color: lightgray;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.DarkGrey{
+    background-color: darkgray;
+}
+
+#input{
+    height: 100px;
+    padding: 10px;
+    width: 100px;
+    color: whitesmoke;
+    font-style: italic;
+}
+
+.calc{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: -1px -1px 10px 10px chocolate;
+}
