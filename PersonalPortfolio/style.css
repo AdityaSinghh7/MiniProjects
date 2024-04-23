@@ -108,6 +108,8 @@ header ul li a{
     padding: 15px 35px;
     font-size: 1.25em;
     letter-spacing: 0.0;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .content button:hover{
@@ -127,6 +129,7 @@ header ul li a{
 
 .img img {
     max-width: 100%;
+    width: 800px;
     max-height: 110%;
     object-fit: cover;
     object-position: center;
@@ -135,4 +138,50 @@ header ul li a{
 .darkModeToggle{
     position: absolute;
     bottom: 250px;
+    left: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.5em;
 }
+
+.banner.DarkMode{
+    background: #333;
+}
+
+.darkModeToggle ion-icon:nth-child(2),
+.banner.DarkMode .darkModeToggle ion-icon:nth-child(1){
+    display: none;
+}
+
+.banner.DarkMode .darkModeToggle ion-icon:nth-child(2){
+    display: block;
+}
+
+.banner.DarkMode .darkModeToggle{
+    background-color: #444;
+    color: #fff;
+}
+
+.banner.DarkMode header .logo,
+.banner.DarkMode .content h2,
+.banner.DarkMode .content p,
+.banner.DarkMode .content button.ContactButtons,
+.banner.DarkMode header ul li a,
+.banner.DarkMode .content h2 span:hover,
+.banner.DarkMode header .logo span:hover
+{
+    color: #fff;
+}
+
+.banner.DarkMode .content button:hover{
+    color: #333;
+}
+
+
