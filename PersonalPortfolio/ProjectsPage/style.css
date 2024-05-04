@@ -3,13 +3,13 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing:border-box;
+    box-sizing:content-box;
     font-family: 'Raleway', sans-serif;
 }
 
 header {
-    display:flex ;
-    padding: 20px;
+    
+    padding: 1.1em;
     justify-content: space-between;
     align-items: center;
 }
@@ -34,14 +34,14 @@ header .logo span:hover {
 
 nav {
     display: flex;
-    padding: 20px;
+    padding: 1.1em;
     align-self: flex-end;
     transition: 0.5s;
 }
 
 nav ul {
     display: flex;
-    gap: 40px;
+    gap: 2.5em;
 }
 
 nav ul li {
@@ -57,12 +57,48 @@ nav ul li a {
 
 .topHeader{
     display: flex;
+    justify-content: space-between;
+    align-items:center;
     
 }
 
 .ProjectsPageHeader{
     display: flex;
-    flex-direction: row;
-    
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+    box-shadow: 0 8px 6px -6px black;
+    border-top: 1px solid #ccc;
 }
+
+.ProjectHeaderText{
+    font-size: 4em;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.project__content{
+    padding-top: 3.125em;
+    position: relative;
+    display: block;
+    float: left;
+    color: #6C7A89;
+    background-color: #f4f5f6;
+}
+
+.project{
+    position: relative;
+    display: flex;
+    float: left;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.223);
+    clear: both;
+    font-size: 16px;
+    font-weight: 400;
+    flex-direction: column;
+}
+
+
 
