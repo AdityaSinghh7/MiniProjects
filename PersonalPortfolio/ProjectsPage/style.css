@@ -66,8 +66,11 @@ nav ul li a {
     display: flex;
     padding-top: 3.125em;
     padding-bottom: 3.125em;
-    box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
     border-top: 1px solid #ccc;
+    margin-bottom: 0.5em;
+    justify-content: center;
+    align-items: center;
 }
 
 .ProjectHeaderText{
@@ -85,7 +88,7 @@ nav ul li a {
     position: relative;
     display: block;
     float: left;
-    color: #6C7A89;
+    color: #f4f5f6;
     background-color: #f4f5f6;
     display: flex;
     flex-direction: column;
@@ -95,30 +98,36 @@ nav ul li a {
     position: relative;
     display: flex;
     flex-direction: row;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.223);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     clear: both;
     font-size: 16px;
-    font-weight: 400;
+    color: #6C7A89;
     column-gap: 10px;
     transition: 0.5s;
     justify-content: space-between;
     background-origin: padding-box;
     background-attachment: scroll;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-bottom: 4em;
 }
 
 
 
 .project_img_container{
-    flex:1.5;
-    padding-right: 1.2em;
+    flex:1.7;
+    display: flex;
+    border: 0.20em solid #d2691e;
+    aspect-ratio: 16 / 9;
+    background-color:#333;
 }
 
 .project_text_container {
     display: flex;
     flex-direction: column;
     flex: 2;
-    justify-content: space-around;
     padding-left: 20px;
+    gap: 0.5em;
 }
 
 .project_title,
@@ -127,10 +136,57 @@ nav ul li a {
     flex: 2;
 }
 
-img{
-    width: 100%;
-    height: auto;
+.project_title{
+    font-size: 3em;
+    font-weight: 400;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 0.5em;
+}
+
+.project_skills{
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    font-weight: 300;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.project_description{
+    margin-top: 0.5em;
+    font-size: 1.115em;
+    font-weight: 200;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 
 
+img{
+    width:100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.github_button .button {
+    display: inline-block;
+    padding: 1em 1em;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5em;
+}
+
+.github_button .button:hover {
+    background-color: #d2691e;
+}
