@@ -62,6 +62,76 @@ nav ul li a {
     
 }
 
+.darkModeToggle {
+    bottom: 2em;
+    height: 2.8em;
+    width: 2.8em;
+    margin-left: 8em;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.5em;
+    position: fixed;
+    top: 1em;
+    left: 20em;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.darkModeToggle ion-icon:nth-child(2),
+body.DarkMode .darkModeToggle ion-icon:nth-child(1) {
+    display: none;
+}
+
+body.DarkMode .darkModeToggle ion-icon:nth-child(2) {
+    display: block;
+}
+
+.darkModeToggle ion-icon {
+    font-size: 1.5em;
+}
+
+body.DarkMode
+{
+    background: #333;
+}
+
+body.DarkMode .project__content {
+    background-color: #333;
+    color: #fff;
+}
+
+body.DarkMode .project,
+body.DarkMode .ProjectHeaderText,
+body.DarkMode .logo
+{
+    color: #fff;
+}
+
+body.DarkMode .project_title,
+body.DarkMode .project_skills,
+body.DarkMode .project_description
+{
+    background-image: linear-gradient(to right, #fff, #ccc);
+    color: transparent;
+}
+
+body.DarkMode .list_items a{
+    color: #fff;
+}
+
+body.DarkMode .github_button .button{
+    background-color: #6C7A89;
+}
+
+body.DarkMode .github_button .button:hover{
+    background-color: #d2691e;
+}
+
 .ProjectsPageHeader{
     display: flex;
     padding-top: 3.125em;
@@ -69,7 +139,7 @@ nav ul li a {
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
     border-top: 1px solid #ccc;
     margin-bottom: 0.5em;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -189,4 +259,9 @@ img{
 
 .github_button .button:hover {
     background-color: #d2691e;
+}
+
+.other-description{
+    font-weight: lighter;
+    font-size: 0.7em;
 }

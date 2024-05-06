@@ -1,8 +1,8 @@
 let DarkModeToggle = document.querySelector(".darkModeToggle");
-let banner = document.querySelector(".banner");
+let body = document.body;
 
 DarkModeToggle.addEventListener("click", ()=>{
-    banner.classList.toggle("DarkMode");
+    body.classList.toggle("DarkMode");
 })
 
 let typingEffect = new Typed("#MovingText", {

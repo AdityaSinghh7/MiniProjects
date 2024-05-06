@@ -11,19 +11,27 @@
         <header>
             <a href="#" class="logo">Aditya<span>D</span>Singh</a>
         </header>
+        <div class="darkModeToggle">
+            <ion-icon name="moon-sharp"></ion-icon>
+            <ion-icon name="sunny-sharp"></ion-icon>
+        </div>
         <nav class="navbar">
             <ul>
-                <li><a href="http://127.0.0.1:5500/PersonalPortfolio/HomePage/">Home</a></li>
-                <li><a href="http://127.0.0.1:5500/PersonalPortfolio/ResumePage/" target="_blank">Resume</a></li>
-                <li><a href="http://127.0.0.1:5500/PersonalPortfolio/ProjectsPage/">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="list_items"><a href="http://127.0.0.1:5500/PersonalPortfolio/HomePage/">Home</a></li>
+                <li class="list_items"><a href="http://127.0.0.1:5500/PersonalPortfolio/ResumePage/" target="_blank">Resume</a></li>
+                <li class="list_items"><a href="http://127.0.0.1:5500/PersonalPortfolio/ProjectsPage/">Projects</a></li>
+                <li class="list_items"><a href="#">About</a></li>
+                <li class="list_items"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </div>
     <main>
         <div class="ProjectsPageHeader">
             <h2 class="ProjectHeaderText">Aditya's Projects</h2>
+            <div class="github_button">
+                <a href="https://github.com/AdityaSinghh7" target="_blank"
+                    class="button">GitHub</a>
+            </div>
         </div>
             <section class="project__content">
                 <div class="project">
@@ -34,8 +42,7 @@
                     </div>
                     <div class="project_text_container">
                         <p class="project_title">1. Webscraping Search Engine</p>
-                        <p class="project_skills"> Technologies Used: <span>Python, Flask, NLTK (Natural Language Toolkit), 
-                            BeautifulSoup</span></p>
+                        <p class="project_skills"> Skills Acquired: <span id="p1_span"></span></p>
                             <p class="project_description">I developed the ICS Search Engine UCI to efficiently index and search over two
                                 thousand documents from UCI's Information and Computer Science school, integrating advanced search 
                                 capabilities with AI-powered summaries.</p>   
@@ -49,13 +56,32 @@
                 <div class="project">
                     <div class="project_img_container">
                         <a>
+                            <img src="Portfolio_ss.png" alt="Content Delivery Network">
+                        </a>
+                    </div>
+                    <div class="project_text_container">
+                        <p class="project_title">2. Portfolio Website (FullStack)</p>
+                        <p class="project_skills">Skills Acquired: <span id="p2_span">
+                            </span></p>
+                        <p class="project_description">
+                            Personal portfolio website, showcasing my expertise in HTML, CSS, and JavaScript through a responsive and user-centric
+                            design.
+                        </p>
+                        <div class="github_button">
+                            <a href="https://github.com/AdityaSinghh7/MiniProjects/tree/main/PersonalPortfolio" target="_blank"
+                                class="button">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project_img_container">
+                        <a>
                             <img src="CDN_ss.png" alt="Content Delivery Network">
                         </a>
                     </div>
                     <div class="project_text_container">
-                        <p class="project_title">2. Content Delivery Network (Backend)</p>
-                        <p class="project_skills">Technologies Used: <span> C++, Object-Oriented Programming, Caching Mechanism
-                        </span></p>
+                        <p class="project_title">3. Content Delivery Network (Backend)</p>
+                        <p class="project_skills">Skills Acquired: <span id="p3_span"></span></p>
                         <p class="project_description">
                             A C++-based simulator for the backend of a Content Delivery Network (CDN) that implements advanced caching mechanisms and analytics to
                             mimic real-world content distribution.
@@ -72,9 +98,8 @@
                         </a>
                     </div>
                     <div class="project_text_container">
-                        <p class="project_title">3. Shell Implementation in C</p>
-                        <p class="project_skills">Technologies Used: <span> C, UNIX System Calls, POSIX Signals, I/O Management, Sync Job Control
-                            </span></p>
+                        <p class="project_title">4. Shell Implementation in C</p>
+                        <p class="project_skills">Skills Acquired: <span id="p4_span"></span></p>
                         <p class="project_description">
                             A custom shell-like program in C that manages foreground and background processes, handles POSIX signals, and provides
                             job control functionalities in a Linux/UNIX environment.
@@ -92,9 +117,8 @@
                         </a>
                     </div>
                     <div class="project_text_container">
-                        <p class="project_title">4. IOS Calculator</p>
-                        <p class="project_skills">Technologies Used: <span> HTML, CSS, JavaScript, GitHub
-                            </span></p>
+                        <p class="project_title">5. IOS Calculator</p>
+                        <p class="project_skills">Skills Acquired: <span id="p5_span"></span></p>
                         <p class="project_description">
                             A web-based calculator project styled like the iOS calculator, using HTML, CSS, and JavaScript to perform basic
                             arithmetic operations while implementing the Shunting Yard algorithm for accurate operation precedence.
@@ -111,7 +135,7 @@
                         <p class="project_skills">
                             CheckersAI: <br>
                             <span class="other-description">
-                                enhanced my skills in C++ and artificial intelligence by implementing strategic gameplay algorithms. This module
+                                Enhanced my skills in C++ and artificial intelligence by implementing strategic gameplay algorithms. This module
                                 showcases my ability to design and integrate AI components that can evaluate and react to varying game states,
                                 demonstrating my understanding of AI principles in game theory and decision-making processes.
                             </span>
@@ -120,17 +144,13 @@
                             <a href="https://github.com/AdityaSinghh7/CheckersAI-Challenge" target="_blank"
                                 class="button">GitHub</a>
                         </div>
-                        <p class="project_skills">
-                            Portfolio Website: <br>
-                            <span class="other-description">The website you are on!</span>
-                        </p>
-                        <div class="github_button">
-                            <a href="https://github.com/AdityaSinghh7/MiniProjects/tree/main/PersonalPortfolio" target="_blank" class="button">GitHub</a>
-                        </div>
                     </div>
                 </div>
             </section>
     </main>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="script.js"></script>
 </html>

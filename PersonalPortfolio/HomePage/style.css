@@ -3,53 +3,24 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: 'Raleway', sans-serif;
 }
 
 html,
 body {
     height: 100%;
-    /* Ensures that the body takes full height of the viewport */
     overflow: hidden;
-    /* Prevents scrolling */
 }
 
-section.banner{
-    position: relative;
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    padding: 100px 0 100px 100px;
-    background: #fff;
-    transition: 0.5s;
-}
+header {
 
-nav.banner{
-    position: absolute;
-    top: 0;
-    right: 200px;
-    left: 1300px;
-    width: 50%;
-    display: flex;
-    padding: 50px;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    display: flex;
-    padding: 20px 100px;
+    padding: 1.1em;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo{
+header .logo {
     color: #333;
     text-decoration: none;
     font-size: 2em;
@@ -57,37 +28,52 @@ header .logo{
     transition: 0.5s;
 }
 
-header .logo span{
+header .logo span {
     color: chocolate;
     font-size: 2em;
     transition: 0.5s;
 }
 
-header .logo span:hover{
+header .logo span:hover {
     color: #333;
 }
 
-
-nav ul{
+nav {
     display: flex;
-    gap: 40px;
+    padding: 1.1em;
+    align-self: flex-end;
+    transition: 0.5s;
 }
 
-nav ul li{
+nav ul {
+    display: flex;
+    gap: 2.5em;
+}
+
+nav ul li {
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     font-weight: 500;
     font-size: 1.2em;
     color: #333;
 }
 
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mainflex{
+    display: flex;
+}
+
 .content{
-    
-    max-width: 700px;
-    top: -200px;
+    margin-top: 20em;
 }
 
 .content h2{
@@ -108,7 +94,7 @@ nav ul li a{
 .content p {
     font-size: 1.2em;
     color: #333;
-    margin: 10px 0;
+    margin: 0.9em 0;
     transition: 0.5s;
 }
 
@@ -118,7 +104,7 @@ nav ul li a{
     color: #333;
     border: none;
     outline: none;
-    padding: 15px 35px;
+    padding: 1em 2em;
     font-size: 1.25em;
     letter-spacing: 0.0;
     cursor: pointer;
@@ -136,13 +122,13 @@ nav ul li a{
     display:flex;
     justify-content: flex-end;
     align-items:center;
-    height: 900px;
+    height: 56.25em;
     overflow: hidden;
 }
 
 .img img {
     max-width: 100%;
-    width: 800px;
+    width: 50em;
     max-height: 110%;
     object-fit: cover;
     object-position: center;
@@ -150,10 +136,10 @@ nav ul li a{
 
 .darkModeToggle{
     position: absolute;
-    bottom: 250px;
+    bottom: 2em;
     left: 50%;
-    height: 60px;
-    width: 60px;
+    height: 2.8em;
+    width: 2.8em;
     background-color: #f0f0f0;
     border-radius: 50%;
     display: flex;
@@ -164,36 +150,37 @@ nav ul li a{
     font-size: 1.5em;
 }
 
-.banner.DarkMode{
+body.DarkMode {
     background: #333;
+    color: #fff;
 }
 
 .darkModeToggle ion-icon:nth-child(2),
-.banner.DarkMode .darkModeToggle ion-icon:nth-child(1){
+body.DarkMode .darkModeToggle ion-icon:nth-child(1){
     display: none;
 }
 
-.banner.DarkMode .darkModeToggle ion-icon:nth-child(2){
+body.DarkMode .darkModeToggle ion-icon:nth-child(2){
     display: block;
 }
 
-.banner.DarkMode .darkModeToggle{
+body.DarkMode .darkModeToggle{
     background-color: #444;
     color: #fff;
 }
 
-.banner.DarkMode header .logo,
-.banner.DarkMode .content h2,
-.banner.DarkMode .content p,
-.banner.DarkMode .content button.ContactButtons,
-.banner.DarkMode nav ul li a,
-.banner.DarkMode .content h2 span:hover,
-.banner.DarkMode header .logo span:hover
+body.DarkMode header .logo,
+body.DarkMode .content h2,
+body.DarkMode .content p,
+body.DarkMode .content button.ContactButtons,
+body.DarkMode nav ul li a,
+body.DarkMode .content h2 span:hover,
+body.DarkMode header .logo span:hover
 {
     color: #fff;
 }
 
-.banner.DarkMode .content button:hover{
+body.DarkMode .content button:hover{
     color: #333;
 }
 
