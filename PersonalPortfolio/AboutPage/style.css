@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+
+    padding: 1.1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #333;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+header .logo span {
+    color: chocolate;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+header .logo span:hover {
+    color: #333;
+}
+
+nav {
+    display: flex;
+    padding: 1.1em;
+    align-self: flex-end;
+    transition: 0.5s;
+}
+
+nav ul {
+    display: flex;
+    gap: 2.5em;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.darkModeToggle {
+    bottom: 2em;
+    height: 2.8em;
+    width: 2.8em;
+    margin-left: 8em;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.5em;
+    position: fixed;
+    top: 1em;
+    left: 20em;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.darkModeToggle ion-icon:nth-child(2),
+body.DarkMode .darkModeToggle ion-icon:nth-child(1) {
+    display: none;
+}
+
+body.DarkMode .darkModeToggle ion-icon:nth-child(2) {
+    display: block;
+}
+
+.darkModeToggle ion-icon {
+    font-size: 1.5em;
+}
+
+.technologies_page_header{
+    display: flex;
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #ccc;
+    margin-bottom: 0.5em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.technologies_header_text{
+    font-size: 4em;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.content
+{
+    display: flex;
+    margin-top: 2em;
+    transition: 0.5s;
+    justify-content: center;
+    padding: 1em;
+}
+
+.technology_card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1em;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    border-radius: 5em;
+}
+
+.technology_card_header{
+    align-self: center;
+    box-shadow: 0 8px 3px -5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    transition: 0.5s;
+    
+}
+
+.technology_card_header h1{
+    text-align: center;
+    text-decoration: none;
+    font-weight: lighter;
+    padding: 0.25em;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-style: italic;
+    font-size: 4em;
+}
+
+.relevant_div{
+    display: flex;
+    column-gap: 12em;
+    padding-inline: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.relevant_headers{
+    font-weight: 500;
+    margin-bottom: 1em;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-style: italic;
+    font-size: 2.5em;
+}
+
+.technology_inner_text{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+li{
+    padding-bottom: 2em;
+}
+
+.project_header{
+    list-style: none;
+    font-size: 2em;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-style: italic;
+}
+
+.button{
+    display: inline-block;
+    padding: 1em 1em;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    border-radius: 1.5em;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5em;
+}
+
+.button:hover{
+    background-color: #d2691e;
+    transition: 0.3s ease;
+}
+
+.text_grade_div{
+    display: flex;
+    gap: 4em;
+}
+
+.grade_received_div p{
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-style: italic;
+    font-size: 1.6em;
+}
+
+
+
