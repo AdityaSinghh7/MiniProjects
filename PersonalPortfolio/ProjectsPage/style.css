@@ -8,13 +8,13 @@
 }
 
 header {
-    
+
     padding: 1.1em;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo{
+header .logo {
     color: #333;
     text-decoration: none;
     font-size: 2em;
@@ -55,11 +55,11 @@ nav ul li a {
     color: #333;
 }
 
-.topHeader{
+.topHeader {
     display: flex;
     justify-content: space-between;
-    align-items:center;
-    
+    align-items: center;
+
 }
 
 .darkModeToggle {
@@ -116,7 +116,7 @@ body.DarkMode .project_title,
 body.DarkMode .project_skills,
 body.DarkMode .project_description
 {
-    background-image: linear-gradient(to right, #fff, #ccc);
+    background-image: linear-gradient(to right, #fff, #d2691e);
     color: transparent;
 }
 
@@ -262,6 +262,6 @@ img{
 }
 
 .other-description{
-    font-weight: lighter;
+    font-weight: 200em;
     font-size: 0.7em;
 }
