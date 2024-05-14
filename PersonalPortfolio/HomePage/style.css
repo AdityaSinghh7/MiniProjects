@@ -50,6 +50,10 @@ nav ul {
     gap: 2.5em;
 }
 
+li {
+    padding-bottom: 2em;
+}
+
 nav ul li {
     list-style: none;
 }

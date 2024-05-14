@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+
+header {
+
+    padding: 1.1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #333;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+header .logo span {
+    color: chocolate;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+header .logo span:hover {
+    color: #333;
+}
+
+nav {
+    display: flex;
+    padding: 1.1em;
+    align-self: flex-end;
+    transition: 0.5s;
+}
+
+nav ul {
+    display: flex;
+    gap: 2.5em;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+li {
+    padding-bottom: 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact_page_header {
+    display: flex;
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #ccc;
+    margin-bottom: 0.5em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_header_text {
+    font-size: 4em;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.darkModeToggle {
+    bottom: 2em;
+    height: 2.8em;
+    width: 2.8em;
+    margin-left: 8em;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.5em;
+    position: fixed;
+    top: 1em;
+    left: 20em;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.darkModeToggle ion-icon:nth-child(2),
+body.DarkMode .darkModeToggle ion-icon:nth-child(1) {
+    display: none;
+}
+
+body.DarkMode .darkModeToggle ion-icon:nth-child(2) {
+    display: block;
+}
+
+.darkModeToggle ion-icon {
+    font-size: 1.5em;
+}
+
+.my_contact_header{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.my_contact_header_text{
+    font-size: 2em;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.post_header_div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reach_contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: start;
+    align-items: flex-start;
+}
+
+.contact_logo_image{
+    height: 2em;
+    width: auto;
+    float: left;
+}
+
+
+.image_text_div{
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    gap: 1em;
+    align-self:flex-start;
+}
+
+
+.contact_text a{
+    font-size: 1em;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.email_box{
+    background-color: #ccc;
+    padding: 4em;
+    margin-right: 0.5em;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    border-radius: 3em;
+    display: flex;
+    flex-direction: column;
+    width: 43em;
+    height: 50em;
+}
+
+.subject-box{
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+}
+
+.name-box {
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+}
+
+.subject-text{
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 500;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.name-text {
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 500;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+#subject-text-email{
+    width: 100%;
+    padding: 0.25em;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+#name-text-email {
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+.email_writing_div{
+    padding: 1em;
+    gap: 0.5em;
+    height: 10em;
+}
+
+#email-body-text{
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    min-height: 20em;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.send-button{
+    margin-top: 15.5em;
+    transition: none;
+}
+
+#send-email{
+    display: inline-flex;
+    padding: 1em 1em;
+    font-size: 1.2em;
+    background-color: #333;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+#attach-button{
+    display: inline-flex;
+    padding: 0em 1em;
+    font-size: 1.5em;
+    background-color: #333;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 1em;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+#attach-button:hover{
+    background-color: #d2691e;
+}
+
+.text_format_buttons{
+    display: flex;
+    gap: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.format-buttons{
+    padding: 0.5em 0.5em;
+    font-size: 1.2em;
+    font-weight: lighter;
+    background-color: #333;
+    color: #ccc;
+}
+
+.format-buttons:hover{
+    background-color: chocolate;
+}
+
+#send-email:hover{
+    background-color: #d2691e;
+}
+
+body.DarkMode {
+    background: #333;
+}
+
+body.DarkMode .logo,
+body.DarkMode .navbar a
+{
+    color: #ccc;
+}
+
+body.DarkMode .contact_header_text p,
+body.DarkMode .my_contact_header h1,
+body.DarkMode .image_text_div a,
+body.DarkMode .image_text_div,
+body.DarkMode .subject-text,
+body.DarkMode .name-text,
+body.DarkMode #popup-text
+{
+    color: transparent;
+    background-image: linear-gradient(to right, #fff, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+body.DarkMode .email_box
+{
+    background-color: #222;
+}
+
+
+body.DarkMode .format-buttons,
+body.DarkMode #attach-button,
+body.DarkMode #send-email,
+body.DarkMode #popup-close-button
+{
+    background-color: #6C7A89;
+    color: white;
+    font-weight: 400;
+}
+
+body.DarkMode .format-buttons:hover,
+body.DarkMode #attach-button:hover,
+body.DarkMode #send-email:hover,
+body.DarkMode #popup-close-button:hover
+{
+    background-color: #d2691e;
+}
+
+
+#bold-button.pressed 
+{
+    background-color: #d2691e;
+}
+
+.popup-div{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 70%;
+    overflow: auto;
+    background-color: #f0f0f0;
+    margin-left: 20em;
+    margin-top: 10em;
+    align-items: center;
+    padding: 5em;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+body.DarkMode #popup
+{
+    background-color: #111;
+}
+
+.popup-div img{
+    height: 10em;
+    width: 10em;
+    margin-bottom: 4em;
+    margin-left: 12em;
+}
+
+#popup-text{
+    font-size: 3em;
+    color: transparent;
+    background-image: linear-gradient(to right, #000000, #d2691e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 600;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 5em;
+    margin-left: 6em;
+}
+
+#popup-close-button{
+    display: inline-flex;
+    padding: 1em 1em;
+    font-size: 1.8em;
+    background-color: #333;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    margin-left: 8em;
+}
+
+#popup-close-button:hover{
+    background-color: #d2691e;
+}
+
+
+

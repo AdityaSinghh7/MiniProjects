@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me!</title>
+</head>
+
+<body>
+    <div class="topHeader">
+        <header>
+            <a href="#" class="logo">Aditya<span>D</span>Singh</a>
+        </header>
+        <div class="darkModeToggle">
+            <ion-icon name="moon-sharp"></ion-icon>
+            <ion-icon name="sunny-sharp"></ion-icon>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li class="list_items"><a href="http://127.0.0.1:5500/PersonalPortfolio/HomePage/">Home</a></li>
+                <li class="list_items"><a href="http://127.0.0.1:5500/PersonalPortfolio/ResumePage/"
+                        target="_blank">Resume</a></li>
+                <li class="list_items"><a href="http://127.0.0.1:5500/PersonalPortfolio/ProjectsPage/">Projects</a></li>
+                <li class="list_items"><a href="http://127.0.0.1:5500/PersonalPortfolio/AboutPage/">Technologies</a>
+                </li>
+                <li class="list_items"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contact_page_header">
+        <div class="contact_header_text">
+            <p>Contact Me!</p>
+        </div>
+    </div>
+    <div class="content">
+        <div id="popup" class="popup-div">
+            <img src="email-sent-png.png" alt="" id="popup-img">
+            <p id="popup-text">Email Sent Successfully, Thank You!</p>
+            <button type="button" id="popup-close-button">Close</button>
+        </div>
+        <div class="my_contact_header">
+            <h1 class="my_contact_header_text">You can reach me at:</h1>
+            <h1 class="my_contact_header_text">Or</h1>
+            <h1 class="my_contact_header_text">Just drop me a mail, right here:</h1>
+        </div>
+        <div class="post_header_div">
+            <div class="reach_contacts">
+                <div class="image_text_div">
+                    <img src="Gmail-logo-design-on-transparent-background-PNG.png" alt="Gmail Logo"
+                        class="contact_logo_image">
+                    <h2 class="contact_text"> <a href="mailto:adityads@uci.edu">adityads@uci.edu</a></h2> <br>
+                </div>
+                <div class="image_text_div">
+                    <img src="linkedin-main-logo.png" alt="LinkedIn Logo" class="contact_logo_image">
+                    <h2 class="contact_text"><a href="https://www.linkedin.com/in/aditya-singh-0a3805214/" target="_blank">Aditya
+                            Singh</a></h2> <br>
+                </div>
+            </div>
+            <div class="email_box">
+                <form id="contact-form">
+                    <div class="name-box">
+                        <p class="name-text" required>Your Name:</p>
+                        <input type="text" name="name-text-email" id="name-text-email" placeholder="Name of Sender" required>
+                    </div>
+                    <div class="subject-box">
+                        <p class="subject-text">Subject:</p>
+                        <input type="text" name="subject-text-email" id="subject-text-email" placeholder="Subject of mail" required>
+                    </div>
+                    <div class="email_writing_div" >
+                        <div id="email-body-text" contenteditable="true"></div>
+                        <div class="text_format_buttons">
+                            <button type="button" class="format-buttons" id="bold-button" onclick="execCommand('bold')"><b>B</b></button>
+                            <button type="button" class="format-buttons" id="underline-button" onclick="execCommand('underline')"><u>U</u></button>
+                            <button type="button" class="format-buttons" id="italic-button" onclick="execCommand('italic')"><i>Italic</i></button>
+                            <select name="text-alignment" id="text-align-select" class="format-buttons" onchange="changeAlignment(this.value)">
+                                <option value="justifyLeft">Left Align</option>
+                                <option value="justifyCenter">Center Align</option>
+                                <option value="justifyRight">Right Align</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="send-button">
+                        <button type="submit" id="send-email">
+                            Send!
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init({
+            publicKey: "eWREhQj0t-nzLf6PN",
+        });
+    })();
+</script>
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</html>
