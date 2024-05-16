@@ -73,12 +73,14 @@ nav ul li a {
 .mainflex {
     display: flex;
     flex-wrap: wrap;
+    align-items: start;
 }
 
 .content {
-    margin-top: 20em;
-    flex: 1;
-    padding: 1em;
+    flex: 1.5;
+    padding: 5em;
+    padding-top: 9em;
+    padding-left: 1em;
 }
 
 .content h2 {
@@ -123,12 +125,13 @@ nav ul li a {
 }
 
 .img {
-    flex: 1;
+    flex: 2;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
     overflow: hidden;
+    padding: 1em;
 }
 
 .img img {
@@ -209,17 +212,20 @@ body.DarkMode .content button:hover {
 
     .content {
         text-align: center;
-        margin-top: 10em;
+        padding: 1em;
     }
 
     .img {
-        order: -1;
         height: auto;
     }
 
     .img img {
         width: 100%;
         height: auto;
+    }
+
+    ul li{
+        padding-bottom: 0em;
     }
 }
 
