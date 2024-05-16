@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         body.classList.toggle("DarkMode");
     });
 
-    const popup = document.getElementById("popup");
+    const popup = document.getElementById("popup-container");
     const closeButton = document.getElementById('popup-close-button');
 
     function showPopup() {
-        popup.style.display = 'block';
+        popup.style.display = 'flex';
     }
 
     function hidePopup() {

@@ -341,7 +341,7 @@ body.DarkMode #popup-text
     background-image: linear-gradient(to right, #fff, #d2691e);
     -webkit-background-clip: text;
     background-clip: text;
-}
+} 
 
 body.DarkMode .email_box
 {
@@ -373,23 +373,37 @@ body.DarkMode #popup-close-button:hover
     background-color: #d2691e;
 }
 
-.popup-div{
-    display: none;
+.popup{
+    display: flex;
     flex-direction: column;
-    position: fixed;
-    z-index: 1001;
-    left: 0;
+    position:fixed;
+    z-index: 999;
     top: 0;
-    width: 50%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     overflow: auto;
-    background-color: #f0f0f0;
-    margin-left: 20em;
-    margin-top: 10em;
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 5em;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
 }
+
+.popup-div{
+    background-color: #fff;
+    padding: 2em;
+    border: 1px solid #888;
+    width: 30em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+
 
 body.DarkMode #popup
 {
@@ -399,8 +413,6 @@ body.DarkMode #popup
 .popup-div img{
     height: 10em;
     width: 10em;
-    margin-bottom: 4em;
-    margin-left: 12em;
 }
 
 #popup-text{
@@ -412,8 +424,6 @@ body.DarkMode #popup
     font-weight: 600;
     font-size: 1.5em;
     font-style: italic;
-    margin-bottom: 5em;
-    margin-left: 6em;
 }
 
 #popup-close-button{
@@ -427,7 +437,6 @@ body.DarkMode #popup
     transition: background-color 0.3s ease;
     margin-bottom: 0.5em;
     cursor: pointer;
-    margin-left: 8em;
 }
 
 #popup-close-button:hover{
@@ -518,6 +527,12 @@ body.DarkMode #popup
         font-size: 1em;
     }
 
+    .popup-div{
+        margin-left: 1em;
+        margin-top: 5em;
+        width: auto;
+        height: auto;
+    }
 }
 
 
