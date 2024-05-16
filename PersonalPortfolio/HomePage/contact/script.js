@@ -2,8 +2,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let darkModeToggle = document.querySelector(".darkModeToggle");
     let body = document.body;
 
-    darkModeToggle.addEventListener("click", () => {
-        body.classList.toggle("DarkMode");
+    function applyMode(isDarkMode) {
+        if (isDarkMode) {
+            body.classList.add("DarkMode");
+        } else {
+            body.classList.remove("DarkMode");
+        }
+    }
+
+    const storedMode = localStorage.getItem("colorMode");
+
+    if (storedMode) {
+        applyMode(storedMode === "dark");
+    } else {
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        applyMode(prefersDarkScheme);
+    }
+
+    darkModeToggle.addEventListener("click", function () {
+        const isDarkMode = body.classList.contains("DarkMode");
+        const newMode = !isDarkMode;
+        applyMode(newMode);
+        localStorage.setItem("colorMode", newMode ? "dark" : "light");
     });
 
     const popup = document.getElementById("popup-container");

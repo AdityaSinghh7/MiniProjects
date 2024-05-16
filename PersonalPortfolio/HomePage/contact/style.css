@@ -374,7 +374,7 @@ body.DarkMode #popup-close-button:hover
 }
 
 .popup{
-    display: flex;
+    display: none;
     flex-direction: column;
     position:fixed;
     z-index: 999;
