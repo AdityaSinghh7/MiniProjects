@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
 html,
 body {
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
-
     padding: 1.1em;
     justify-content: space-between;
     align-items: center;
@@ -69,18 +68,20 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
-.mainflex{
+.mainflex {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.content{
+.content {
     margin-top: 20em;
+    flex: 1;
+    padding: 1em;
 }
 
-.content h2{
+.content h2 {
     font-size: 5.5em;
     color: #333;
     transition: 0.5s;
@@ -90,7 +91,7 @@ nav ul li a {
     color: chocolate;
 }
 
-.content h2 span:hover{
+.content h2 span:hover {
     color: #333;
     transition: 0.5s;
 }
@@ -102,7 +103,7 @@ nav ul li a {
     transition: 0.5s;
 }
 
-.content button{
+.content button {
     position: relative;
     background: chocolate;
     color: #333;
@@ -115,7 +116,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-.content button:hover{
+.content button:hover {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
@@ -123,22 +124,22 @@ nav ul li a {
 
 .img {
     flex: 1;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
-    align-items:center;
-    height: 56.25em;
+    align-items: center;
+    height: 100%;
     overflow: hidden;
 }
 
 .img img {
     max-width: 100%;
-    width: 50em;
-    max-height: 110%;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     object-position: center;
 }
 
-.darkModeToggle{
+.darkModeToggle {
     position: absolute;
     bottom: 2em;
     left: 50%;
@@ -160,15 +161,15 @@ body.DarkMode {
 }
 
 .darkModeToggle ion-icon:nth-child(2),
-body.DarkMode .darkModeToggle ion-icon:nth-child(1){
+body.DarkMode .darkModeToggle ion-icon:nth-child(1) {
     display: none;
 }
 
-body.DarkMode .darkModeToggle ion-icon:nth-child(2){
+body.DarkMode .darkModeToggle ion-icon:nth-child(2) {
     display: block;
 }
 
-body.DarkMode .darkModeToggle{
+body.DarkMode .darkModeToggle {
     background-color: #444;
     color: #fff;
 }
@@ -179,13 +180,71 @@ body.DarkMode .content p,
 body.DarkMode .content button.ContactButtons,
 body.DarkMode nav ul li a,
 body.DarkMode .content h2 span:hover,
-body.DarkMode header .logo span:hover
-{
+body.DarkMode header .logo span:hover {
     color: #fff;
 }
 
-body.DarkMode .content button:hover{
+body.DarkMode .content button:hover {
     color: #333;
 }
 
+/* Media Queries for Responsiveness */
 
+@media (max-width: 1200px) {
+    .content h2 {
+        font-size: 4em;
+    }
+
+    .content p,
+    .content button {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 992px) {
+    .mainflex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        text-align: center;
+        margin-top: 10em;
+    }
+
+    .img {
+        order: -1;
+        height: auto;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    header .logo {
+        font-size: 1.5em;
+    }
+
+    .content h2 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 576px) {
+    .content h2 {
+        font-size: 2.5em;
+    }
+
+    .content p,
+    .content button {
+        font-size: 0.9em;
+    }
+}
