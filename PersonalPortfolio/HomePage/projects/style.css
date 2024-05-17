@@ -303,6 +303,11 @@ img{
     .project_text_container {
         padding-left: 0;
     }
+
+    .project_img_container {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -335,6 +340,11 @@ img{
         margin: 1em;
         padding: 1em;
     }
+
+    .project_img_container {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 576px) {
@@ -359,5 +369,10 @@ img{
 
     .project_description {
         font-size: 0.8em;
+    }
+
+    .project_img_container {
+        width: 100%;
+        margin: 0 auto;
     }
 }
